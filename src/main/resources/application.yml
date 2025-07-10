@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: toolsAI
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          max-tokens: 100
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Tools
+    username: santer
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
